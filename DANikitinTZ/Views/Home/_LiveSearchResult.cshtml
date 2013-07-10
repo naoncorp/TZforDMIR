@@ -1,0 +1,32 @@
+﻿@model IEnumerable<DANikitinTZ.Models.Person>
+
+<table>
+    <tr>
+        <th>
+            @GlobalRes.Name
+        </th>
+        <th>
+            @GlobalRes.Birthday
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.id)
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Birthday)
+        </td>
+    </tr>
+}
+</table>
+@{ if(ViewBag.CountStrings > 10) {
+    if (ViewBag.CountView != 0)
+    {
+       <a class="view-all" onclick="GetPersons(0)">@GlobalRes.ViewAll</a>
+    }
+   }
+    
+    }
+

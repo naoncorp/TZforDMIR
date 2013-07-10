@@ -1,0 +1,20 @@
+﻿@model IEnumerable<DANikitinTZ.Models.Person>
+
+<!-- Загрузка файла -->
+<div id="uploadForm">
+        @Html.Partial("_UploadForm")
+</div>
+
+<!-- Поиск -->
+<div id="searchForm">
+    @Html.Partial("_LiveSearchForm")
+</div>
+<div id="resSearch" class="people-table">
+        @{ if(ViewBag.Search == true)
+            {
+                Html.RenderPartial("_LiveSearchResult");
+            }}
+
+    </div>
+
+

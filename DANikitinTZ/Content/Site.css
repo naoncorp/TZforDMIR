@@ -1,0 +1,565 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    background-image: url('/Content/themes/base/images/bg.png');
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    min-height: 100%;
+    height: 100%;
+    margin-bottom: -80px; /* Отрицательное значение высоты footer'а */
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+    background-image: url('/Content/themes/base/images/header.jpg');
+    height: 130px;
+    min-height: 130px;
+}
+
+    header h1, #header h1 {
+        font-weight: bold;
+        padding: 5px 0;
+        margin: 0;
+        color: #fff;
+        border: none;
+        line-height: 2em;
+        font-size: 32px !important;
+        text-shadow: 1px 1px 2px #111;
+    }
+
+#main {
+    padding: 30px 0px 15px 0px;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    box-shadow: 0 0 22px black;
+    min-height: 80%;
+    position: relative;
+}
+
+footer,
+#footer {
+    background-image: url('/Content/themes/base/images/footer.png');
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+    }
+
+        ul#menu li#greeting {
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 2.8em;
+            color: #fff;
+        }
+
+        ul#menu li a {
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 2.8em;
+            background-color: #e8eef4;
+            color: #034af3;
+            border-radius: 4px 4px 0 0;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+        }
+
+            ul#menu li a:hover {
+                background-color: #fff;
+                text-decoration: none;
+            }
+
+            ul#menu li a:active {
+                background-color: #a6e2a6;
+                text-decoration: none;
+            }
+
+        ul#menu li.selected a {
+            background-color: #fff;
+            color: #000;
+        }
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.4em;
+    padding: 5px;
+    color: white;
+    background-color: #2D5A8A;
+    border: 2px solid white;
+    box-shadow: 0 0 2px black;
+    transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #1DB459;
+    }
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border-collapse: collapse;
+}
+
+    table td {
+        vertical-align: top;
+    }
+
+    table th {
+        padding: 6px 5px;
+        text-align: left;
+        background-color: #e8eef4;
+    }
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav,
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    color: White;
+}
+
+    #logindisplay a:link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:visited {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field,
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+    .text-box.multi-line {
+        height: 6.5em;
+    }
+
+.tri-state {
+    width: 6em;
+}
+
+.wrapper-header {
+    width: 80%;
+    margin: auto;
+}
+
+.load-db-list {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 2px;
+}
+
+.people-table {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 2px;
+    display: block;
+    width: 737px;
+    margin: auto;
+}
+
+.view-all {
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    background-color: #227888;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    width: 107px;
+    border: 1px solid white;
+    box-shadow: 0 0 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+    .view-all:hover {
+        background-color: rgb(43, 148, 9);
+        color: white;
+    }
+
+.people-table table, .people-table table td {
+    border: 1px solid #ccc;
+}
+
+    .people-table table td {
+        padding: 4px;
+    }
+
+.middle-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 55px;
+}
+
+    .middle-content table {
+        width: 100%;
+    }
+
+        .middle-content table tr:nth-child(2n) {
+            background: #f0f0f0;
+        }
+
+.lang-menu ul li {
+    display: inline-block;
+}
+
+    .lang-menu ul li img {
+        width: 30px;
+    }
+
+#title img {
+    width: 172px;
+    border-radius: 117px;
+    border: 6px solid whitesmoke;
+    box-shadow: 0 0 7px black;
+    position: relative;
+    z-index: 1;
+    margin-left: 83px;
+    margin-top: 10px;
+}
+
+#title div {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    z-index: 1;
+}
+
+#title .tz {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 5px;
+}
+
+.lang-menu {
+    position: relative;
+    text-align: right;
+    margin-top: -88px;
+    width: 300px;
+    float: right;
+    z-index: 500;
+}
+
+#resSearch {
+    display:none;
+    
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+#resSearch p {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 0px;
+    margin-top: 10px;
+}
+
+ui-datepicker-div {
+    z-index: 1000!important;
+}
+
+#searchForm {
+    padding: 20px;
+    border-radius: 2px;
+    margin: 5px 0px 5px 0px;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+    #searchForm form {
+        margin: auto;
+        width: 780px;
+    }
+
+        #searchForm form p {
+            font-size: 20px;
+            margin-top: 0px;
+            text-align:right;
+        }
+
+        #searchForm form a {
+            text-align: right;
+            display: block;
+            cursor: pointer;
+            color: rgb(50, 115, 158);
+            margin-right: 1px;
+        }
+
+            #searchForm form a:hover {
+                color: #D1651D;
+            }
+    #searchForm input {
+       width: 700px;
+       background-image: url(/Content/images/searchload.gif);
+background-repeat: no-repeat;
+
+/*Для анимации*/
+transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+background-position: 720px 1px;
+    }
+
+#uploadForm {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 2px;
+    width: 320px;
+    margin: auto;
+    margin-top: 125px;
+    position: relative;
+    left: 50%;
+    
+    /*Для анимации*/
+    margin-left: -100%;
+    display: none;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+    #uploadForm input {
+        font-size: 14px;
+        margin: auto;
+        width: 300px;
+    }
+
+    #uploadForm div {
+        text-align:center;
+        display:none;
+    }
+
+    #uploadForm p {
+        margin-top:0px;
+        margin-bottom:0px;
+    }

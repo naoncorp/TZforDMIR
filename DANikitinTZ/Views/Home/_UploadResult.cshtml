@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DANikitinTZ.Models.CountPersons>
+<h2>@GlobalRes.Uploaded</h2>
+<table>
+    <tr>
+        <th>
+            @GlobalRes.Age
+        </th>
+        <th>
+            @GlobalRes.Count
+        </th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.Age
+        </td>
+        <td>
+            @item.Count
+        </td>
+       
+       
+    </tr>
+}
+</table>
